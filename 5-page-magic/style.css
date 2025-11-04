@@ -1,0 +1,134 @@
+/* === GLOBAL PAGE SETUP === */
+body {
+  background-color: #A29CBB;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* === HEADER === */
+header img {
+  width: 100%;
+  max-width: 2000px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* === NAVIGATION BAR === */
+nav {
+  background-color: #AD0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+nav a img {
+  height: 80px;
+  width: 260px;
+  object-fit: contain;
+  transition: transform 0.3s, opacity 0.3s;
+  display: inline-block;
+}
+
+nav a img:hover {
+  transform: scale(1.05);
+  opacity: 0.85;
+}
+
+/* === ACTIVE PAGE HIGHLIGHT (OPTIONAL) === */
+.active-page {
+  background-color: #A29CBB; /* same grey as page background */
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.active-page img {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.active-page img:hover {
+  transform: scale(1.1);
+}
+
+/* === HERO IMAGE === */
+.hero {
+  margin: 0 auto;
+  max-width: 2000px;
+  width: 100%;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  max-height: 1200px;
+  transition: opacity 0.4s;
+  cursor: pointer;
+}
+
+.hero img:hover {
+  opacity: 0.9;
+}
+
+/* === ACCESSORIES PAGE ELEMENTS === */
+.content {
+  max-width: 2000px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product {
+  background-color: #FFF3F3;
+  border-radius: 12px;
+  padding: 15px;
+  max-width: 320px;
+  text-align: center;
+}
+
+.product img {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  height: auto;
+}
+
+.info-box {
+  background-color: #FFF3F3;
+  color: #000;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.info-box h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  nav a img {
+    width: 45%;
+    height: auto;
+  }
+}
