@@ -1,0 +1,38 @@
+/* GENERAL */
+body {
+  scroll-behavior: smooth;
+}
+
+/* HERO */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* SKILL BOXES */
+.skill-box {
+  padding: 15px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* EXPERIENCE LIST */
+.list-group-item {
+  padding: 20px;
+}
+
+/* OPTIONAL: Hover effect */
+.skill-box:hover {
+  background: #eaeaea;
+  transition: 0.3s;
+}
+
+/* OPTIONAL spacing adjustments */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
